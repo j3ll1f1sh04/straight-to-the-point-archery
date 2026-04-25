@@ -1,62 +1,433 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Contact | Straight to the Point Archery</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Straight to the Point Archery</title>
+  <meta name="description" content="Contact Straight to the Point Archery in Seattle, WA. Find our address, phone, email, and hours. Reach out about classes, group bookings, or general inquiries." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    /* Contact page extras */
+    .contact-form-wrap {
+      background: var(--white);
+      border-radius: 10px;
+      box-shadow: 0 4px 24px rgba(27,68,127,0.12);
+      padding: 2.5rem;
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    .form-label {
+      display: block;
+      font-weight: bold;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      color: var(--navy);
+      margin-bottom: 0.5rem;
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      font-family: var(--font);
+      font-size: 16px;
+      color: var(--dark);
+      border: 2px solid var(--border);
+      border-radius: 5px;
+      background: var(--light-bg);
+      transition: border-color var(--transition), box-shadow var(--transition);
+      appearance: none;
+    }
+
+    .form-control:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(3,163,223,0.18);
+      background: var(--white);
+    }
+
+    textarea.form-control {
+      min-height: 140px;
+      resize: vertical;
+    }
+
+    select.form-control {
+      cursor: pointer;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+    }
+
+    .hours-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+      font-size: 15px;
+    }
+
+    .hours-table th,
+    .hours-table td {
+      padding: 0.6rem 0.75rem;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .hours-table th {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--primary);
+      font-weight: bold;
+    }
+
+    .hours-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .map-placeholder {
+      width: 100%;
+      height: 260px;
+      background: linear-gradient(135deg, var(--primary), var(--navy));
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: var(--white);
+      font-size: 48px;
+      gap: 0.75rem;
+      margin-top: 2rem;
+      opacity: 0.75;
+    }
+
+    .map-placeholder p {
+      font-size: 15px;
+      margin: 0;
+      opacity: 0.9;
+    }
+
+    @media (max-width: 680px) {
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <nav aria-label="Main navigation">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="classes.html">Classes</a></li>
-                <li><a href="instructors.html">Instructors</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html" aria-current="page">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <section aria-labelledby="contact-title">
-            <h1 id="contact-title">Contact Straight to the Point Archery</h1>
-            <p>
-                Reach out with questions about class placement, schedules, private lessons,
-                youth programs, or group events. We are happy to help you get started.
-            </p>
-        </section>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
-        <section aria-labelledby="contact-details-title">
-            <h2 id="contact-details-title">Contact Details</h2>
+  <!-- ── HEADER ───────────────────────────────────────────── -->
+  <header class="site-header">
+    <div class="container">
+      <a class="site-logo" href="index.html" aria-label="Straight to the Point Archery — Home">
+        <img src="imgs/archeryAcademy-logo-white.png" alt="Archery Academy logo" class="site-logo-img" />
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="classes.html">Classes</a></li>
+          <li><a href="instructors.html">Instructors</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ── MAIN CONTENT ─────────────────────────────────────── -->
+  <main id="main-content">
+
+    <!-- Page Hero -->
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="container">
+        <h1 id="page-title">Contact Us</h1>
+        <p>We'd love to hear from you. Reach out with questions about classes, group bookings, private lessons, or anything else.</p>
+      </div>
+    </section>
+
+    <!-- Contact Main -->
+    <section class="section" aria-labelledby="contact-main-title">
+      <div class="container">
+        <h2 class="section-title" id="contact-main-title">Get in Touch</h2>
+
+        <div class="contact-grid">
+
+          <!-- Contact Info -->
+          <aside aria-labelledby="contact-info-title">
+            <h3 id="contact-info-title" style="color:var(--navy); margin-bottom:1.5rem; font-size:20px;">Our Information</h3>
+
             <address>
-                Straight to the Point Archery<br>
-                528 Nock Point Ln<br>
-                Tacoma, WA 98412<br>
-                Phone: <a href="tel:+12535551234">(253) 555-1234</a><br>
-                Email: <a href="mailto:info@straighttothepointarchery.org">info@straighttothepointarchery.org</a>
+              <div class="contact-item">
+                <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                <div>
+                  <div class="contact-item-label">Address</div>
+                  <div class="contact-item-value">
+                    123 Archery Lane<br>
+                    Seattle, WA 98101
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                <div>
+                  <div class="contact-item-label">Phone</div>
+                  <div class="contact-item-value">
+                    <a href="tel:+12065550123">(206) 555-0123</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                <div>
+                  <div class="contact-item-label">Email</div>
+                  <div class="contact-item-value">
+                    <a href="mailto:info@straighttothepointarchery.com">info@sttpa.com</a>
+                  </div>
+                </div>
+              </div>
             </address>
-        </section>
 
-        <section aria-labelledby="hours-title">
-            <h2 id="hours-title">Hours</h2>
-            <p>Monday to Friday: 3:00 PM to 8:00 PM</p>
-            <p>Saturday: 10:00 AM to 4:00 PM</p>
-            <p>Sunday: Closed</p>
-        </section>
+            <!-- Hours -->
+            <h3 style="color:var(--navy); margin:2rem 0 0.5rem; font-size:18px;">
+              <i class="fa-solid fa-clock" aria-hidden="true" style="color:var(--primary); margin-right:0.5rem;"></i>
+              Hours of Operation
+            </h3>
 
-        <section aria-labelledby="directions-title">
-            <h2 id="directions-title">Directions</h2>
-            <p>
-                Find us in Tacoma and plan your visit with online directions.
-            </p>
-            <p>
-                <a href="https://maps.google.com/?q=528+Nock+Point+Ln,+Tacoma,+WA+98412" target="_blank" rel="noopener noreferrer">
-                    Open in Google Maps
-                </a>
-            </p>
-        </section>
-    </main>
+            <table class="hours-table" aria-label="Hours of operation">
+              <thead>
+                <tr>
+                  <th scope="col">Day</th>
+                  <th scope="col">Hours</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Monday – Friday</td>
+                  <td>3:00 PM – 9:00 PM</td>
+                </tr>
+                <tr>
+                  <td>Saturday</td>
+                  <td>9:00 AM – 6:00 PM</td>
+                </tr>
+                <tr>
+                  <td>Sunday</td>
+                  <td>10:00 AM – 4:00 PM</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <!-- Map placeholder -->
+            <div class="map-placeholder" aria-label="Map of our location at 123 Archery Lane, Seattle WA 98101">
+              <i class="fa-solid fa-map-location-dot" aria-hidden="true"></i>
+              <p>123 Archery Lane, Seattle, WA 98101</p>
+            </div>
+
+          </aside>
+
+          <!-- Contact Form -->
+          <div>
+            <div class="contact-form-wrap">
+              <h3 style="color:var(--navy); margin-bottom:1.5rem; font-size:20px;">Send Us a Message</h3>
+
+              <form action="#" method="post" novalidate aria-label="Contact form">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label class="form-label" for="first-name">First Name <span aria-hidden="true">*</span></label>
+                    <input
+                      class="form-control"
+                      type="text"
+                      id="first-name"
+                      name="first_name"
+                      autocomplete="given-name"
+                      required
+                      aria-required="true"
+                      placeholder="Jane"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="last-name">Last Name <span aria-hidden="true">*</span></label>
+                    <input
+                      class="form-control"
+                      type="text"
+                      id="last-name"
+                      name="last_name"
+                      autocomplete="family-name"
+                      required
+                      aria-required="true"
+                      placeholder="Smith"
+                    />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="email">Email Address <span aria-hidden="true">*</span></label>
+                  <input
+                    class="form-control"
+                    type="email"
+                    id="email"
+                    name="email"
+                    autocomplete="email"
+                    required
+                    aria-required="true"
+                    placeholder="jane@example.com"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="phone">Phone Number</label>
+                  <input
+                    class="form-control"
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    autocomplete="tel"
+                    placeholder="(206) 555-0000"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="inquiry-type">I'm Inquiring About</label>
+                  <select class="form-control" id="inquiry-type" name="inquiry_type">
+                    <option value="">— Select an option —</option>
+                    <option value="beginner-class">Beginner Class (A101)</option>
+                    <option value="youth-class">Youth Archery Program</option>
+                    <option value="intermediate-class">Intermediate Class (A102)</option>
+                    <option value="advanced-class">Advanced / Competitive (A103)</option>
+                    <option value="private-lesson">Private Lessons</option>
+                    <option value="group-event">Group / Corporate Event</option>
+                    <option value="scouts">Scouts / Youth Group</option>
+                    <option value="partnership">Non-Profit Partnership</option>
+                    <option value="general">General Question</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="message">Message <span aria-hidden="true">*</span></label>
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    name="message"
+                    required
+                    aria-required="true"
+                    placeholder="Tell us a bit about yourself or what you're looking for — we're happy to help!"
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="btn btn--gold" style="width:100%;">
+                  <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>&nbsp; Send Message
+                </button>
+
+                <p style="font-size:13px; color:var(--dark); opacity:0.65; margin-top:1rem; text-align:center;">
+                  We typically respond within 1–2 business days.
+                </p>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Group / Community inquiries -->
+    <section class="section section--light" aria-labelledby="group-contact-title">
+      <div class="container">
+        <h2 class="section-title" id="group-contact-title">Group &amp; Partnership Inquiries</h2>
+        <p>Planning a corporate event, youth group outing, or non-profit partnership? We work with organizations of all sizes to create memorable and meaningful archery experiences. Here's what to include in your message to help us respond quickly:</p>
+
+        <div class="card-grid" style="margin-top:2rem;">
+          <article class="card">
+            <div class="card__body">
+              <p class="card__tag"><i class="fa-solid fa-briefcase" aria-hidden="true"></i> &nbsp;Corporate</p>
+              <h3 class="card__title">Team Building Events</h3>
+              <p class="card__text">Let us know your group size, preferred date range, and any special requests. We'll provide a custom quote for your event.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__body">
+              <p class="card__tag"><i class="fa-solid fa-child" aria-hidden="true"></i> &nbsp;Youth</p>
+              <h3 class="card__title">Scouts &amp; Youth Groups</h3>
+              <p class="card__text">Include your organization name, number of participants, age range, and any merit badge requirements. We'll help design the right program.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__body">
+              <p class="card__tag"><i class="fa-solid fa-handshake" aria-hidden="true"></i> &nbsp;Partners</p>
+              <h3 class="card__title">Non-Profit Partnerships</h3>
+              <p class="card__text">Tell us about your organization's mission and the community you serve. We're open to exploring mutually beneficial programs and collaborations.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── FOOTER ───────────────────────────────────────────── -->
+  <footer class="site-footer">
+    <div class="footer-image-bar" aria-hidden="true">
+      <div class="footer-image-bar-placeholder">
+        <i class="fa-solid fa-bullseye"></i>
+      </div>
+    </div>
+    <div class="footer-main">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <div class="footer-logo-text">Straight to the Point</div>
+            <p class="footer-tagline">A non-profit archery center dedicated to making archery safe, accessible, and rewarding for everyone in the Seattle community.</p>
+          </div>
+          <nav aria-label="Footer navigation">
+            <h3 class="footer-heading">Quick Links</h3>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="classes.html">Classes</a></li>
+              <li><a href="instructors.html">Instructors</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+          <div>
+            <h3 class="footer-heading">Contact</h3>
+            <address style="font-style:normal; font-size:15px; opacity:0.8; line-height:1.9;">
+              123 Archery Lane<br>Seattle, WA 98101<br>
+              <a href="tel:+12065550123" style="color:rgba(255,255,255,0.8);">(206) 555-0123</a><br>
+              <a href="mailto:info@sttpa.com" style="color:rgba(255,255,255,0.8);">info@sttpa.com</a>
+            </address>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>&copy; 2024 Straight to the Point Archery | Seattle, WA</span>
+          <span>Affiliated with WSAA &amp; NFAA</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.main-nav');
+    toggle.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+  </script>
+
 </body>
 </html>

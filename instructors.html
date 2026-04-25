@@ -1,59 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Instructors | Straight to the Point Archery</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Instructors | Straight to the Point Archery</title>
+  <meta name="description" content="Meet the USA Archery-certified instructors at Straight to the Point Archery in Seattle, WA. Learn about their certifications, specialties, and coaching philosophy." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
-    <header>
-        <nav aria-label="Main navigation">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="classes.html">Classes</a></li>
-                <li><a href="instructors.html" aria-current="page">Instructors</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact</a></li>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- ── HEADER ───────────────────────────────────────────── -->
+  <header class="site-header">
+    <div class="container">
+      <a class="site-logo" href="index.html" aria-label="Straight to the Point Archery — Home">
+        <img src="imgs/archeryAcademy-logo-white.png" alt="Archery Academy logo" class="site-logo-img" />
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="classes.html">Classes</a></li>
+          <li><a href="instructors.html" class="active">Instructors</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ── MAIN CONTENT ─────────────────────────────────────── -->
+  <main id="main-content">
+
+    <!-- Page Hero -->
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="container">
+        <h1 id="page-title">Meet Our Instructors</h1>
+        <p>Our team of USA Archery-certified coaches brings decades of combined experience, genuine passion for the sport, and a commitment to every student's success.</p>
+      </div>
+    </section>
+
+    <!-- Trust Banner -->
+    <aside class="stats-bar" aria-label="Instructor credentials">
+      <div class="container">
+        <div class="stats-grid">
+          <div>
+            <div class="stat-number"><i class="fa-solid fa-certificate" aria-hidden="true"></i></div>
+            <div class="stat-label">USA Archery Certified</div>
+          </div>
+          <div>
+            <div class="stat-number">L3</div>
+            <div class="stat-label">Level 3 Coaches</div>
+          </div>
+          <div>
+            <div class="stat-number">4+</div>
+            <div class="stat-label">Bow Style Specialties</div>
+          </div>
+          <div>
+            <div class="stat-number"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></div>
+            <div class="stat-label">Safety-First Approach</div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Instructors Section -->
+    <section class="section" aria-labelledby="instructors-title">
+      <div class="container">
+        <h2 class="section-title" id="instructors-title">Our Coaching Staff</h2>
+        <p>Every instructor at Straight to the Point Archery holds USA Archery certification and is committed to creating a safe, welcoming, and high-quality learning environment for students of all ages and abilities.</p>
+
+        <div class="instructor-grid" style="margin-top:2.5rem;">
+
+          <!-- Instructor 1 -->
+          <article class="instructor-card" aria-labelledby="derek-name">
+            <div class="instructor-card__header">
+              <img src="imgs/instructor-bio-image1.png" alt="Photo of Derek Jenkins" class="instructor-card__photo" />
+              <div>
+                <h3 class="instructor-card__name" id="derek-name">Derek Jenkins</h3>
+                <div class="instructor-card__cert-label">Certification</div>
+                <div class="instructor-card__cert">Level 3 Coach</div>
+                <div class="instructor-card__bow-label">Coaching Bow Styles</div>
+                <div class="instructor-card__bow">Recurve</div>
+              </div>
+            </div>
+            <div class="instructor-card__body">
+              <blockquote class="instructor-card__quote">
+                "My biggest goal is to see archery grow and help its participants to grow with it."
+              </blockquote>
+              <p class="instructor-card__bio">
+                Derek has been competing and coaching in the recurve discipline for over 15 years. He discovered archery as a teenager and has never looked back. Outside the range, Derek enjoys hiking the Cascades and volunteering with youth outdoor programs. His patient, methodical teaching style makes him especially popular with beginners and young archers.
+              </p>
+            </div>
+          </article>
+
+          <!-- Instructor 2 -->
+          <article class="instructor-card" aria-labelledby="sarah-name">
+            <div class="instructor-card__header">
+              <img src="imgs/instructor-bio-image2.png" alt="Photo of Sarah Okafor" class="instructor-card__photo" />
+              <div>
+                <h3 class="instructor-card__name" id="sarah-name">Sarah Okafor</h3>
+                <div class="instructor-card__cert-label">Certification</div>
+                <div class="instructor-card__cert">Level 3 Coach — USA Archery</div>
+                <div class="instructor-card__bow-label">Coaching Bow Styles</div>
+                <div class="instructor-card__bow">Compound &amp; Recurve</div>
+              </div>
+            </div>
+            <div class="instructor-card__body">
+              <blockquote class="instructor-card__quote">
+                "Archery teaches you patience, precision, and presence — skills that go far beyond the range."
+              </blockquote>
+              <p class="instructor-card__bio">
+                Sarah is a two-time state medalist in the compound division and brings competitive expertise to every session she coaches. With a background in sports psychology, she helps students develop not just technique but the mental resilience needed to perform under pressure. Sarah also leads our A103 competitive training program.
+              </p>
+            </div>
+          </article>
+
+          <!-- Instructor 3 -->
+          <article class="instructor-card" aria-labelledby="marcus-name">
+            <div class="instructor-card__header">
+              <img src="imgs/instructor-bio-image3.png" alt="Photo of Marcus Tanaka" class="instructor-card__photo" />
+              <div>
+                <h3 class="instructor-card__name" id="marcus-name">Marcus Tanaka</h3>
+                <div class="instructor-card__cert-label">Certification</div>
+                <div class="instructor-card__cert">Level 2 Coach — USA Archery</div>
+                <div class="instructor-card__bow-label">Coaching Bow Styles</div>
+                <div class="instructor-card__bow">Traditional Longbow &amp; Barebow</div>
+              </div>
+            </div>
+            <div class="instructor-card__body">
+              <blockquote class="instructor-card__quote">
+                "There's something deeply satisfying about the traditional form — no sights, no stabilizers, just instinct and practice."
+              </blockquote>
+              <p class="instructor-card__bio">
+                Marcus specializes in traditional archery styles, including longbow and barebow shooting. He is the go-to coach for students interested in bow hunting, historical archery, or anyone who wants to develop instinctive shooting. In his free time, Marcus practices 3D archery in the woods and teaches wilderness survival skills.
+              </p>
+            </div>
+          </article>
+
+          <!-- Instructor 4 -->
+          <article class="instructor-card" aria-labelledby="linda-name">
+            <div class="instructor-card__header">
+              <img src="imgs/instructor-bio-image4.png" alt="Photo of Linda Cartwright" class="instructor-card__photo" />
+              <div>
+                <h3 class="instructor-card__name" id="linda-name">Linda Cartwright</h3>
+                <div class="instructor-card__cert-label">Certification</div>
+                <div class="instructor-card__cert">Level 2 Coach — USA Archery</div>
+                <div class="instructor-card__bow-label">Coaching Bow Styles</div>
+                <div class="instructor-card__bow">Recurve &amp; Youth Programs</div>
+              </div>
+            </div>
+            <div class="instructor-card__body">
+              <blockquote class="instructor-card__quote">
+                "Every child who walks in here leaves with more confidence than they came with. That's what keeps me going."
+              </blockquote>
+              <p class="instructor-card__bio">
+                With a background in elementary education, Linda brings remarkable skill in working with children and first-time archers. She leads our youth programs, scouts sessions, and introductory A101 classes. Linda is passionate about inclusive sports education and ensuring every young person feels capable and welcome at the range.
+              </p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Private Lesson CTA -->
+    <section class="section section--primary" aria-labelledby="private-cta-title">
+      <div class="container" style="text-align:center; max-width:680px;">
+        <h2 class="section-title" id="private-cta-title" style="display:block; text-align:center;">Work One-on-One With a Coach</h2>
+        <p style="font-size:18px; opacity:0.95; margin-bottom:2rem;">All of our instructors are available for private lessons. Whether you have a specific interest like bow hunting or simply want focused attention to accelerate your progress, we'll match you with the right coach.</p>
+        <a href="classes.html#private" class="btn btn--gold">View Private Lesson Pricing</a>
+        &nbsp;
+        <a href="contact.html" class="btn btn--outline">Book a Session</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── FOOTER ───────────────────────────────────────────── -->
+  <footer class="site-footer">
+    <div class="footer-image-bar" aria-hidden="true">
+      <div class="footer-image-bar-placeholder">
+        <i class="fa-solid fa-bullseye"></i>
+      </div>
+    </div>
+    <div class="footer-main">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <div class="footer-logo-text">Straight to the Point</div>
+            <p class="footer-tagline">A non-profit archery center dedicated to making archery safe, accessible, and rewarding for everyone in the Seattle community.</p>
+          </div>
+          <nav aria-label="Footer navigation">
+            <h3 class="footer-heading">Quick Links</h3>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="classes.html">Classes</a></li>
+              <li><a href="instructors.html">Instructors</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact</a></li>
             </ul>
-        </nav>
-    </header>
+          </nav>
+          <div>
+            <h3 class="footer-heading">Contact</h3>
+            <address style="font-style:normal; font-size:15px; opacity:0.8; line-height:1.9;">
+              123 Archery Lane<br>Seattle, WA 98101<br>
+              <a href="tel:+12065550123" style="color:rgba(255,255,255,0.8);">(206) 555-0123</a><br>
+              <a href="mailto:info@sttpa.com" style="color:rgba(255,255,255,0.8);">info@sttpa.com</a>
+            </address>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>&copy; 2024 Straight to the Point Archery | Seattle, WA</span>
+          <span>Affiliated with WSAA &amp; NFAA</span>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-    <main>
-        <section aria-labelledby="instructors-title">
-            <h1 id="instructors-title">Meet Our Instructors</h1>
-            <p>
-                Our coaching team combines safety-first instruction with real-world experience
-                to support beginners, youth, and competitive archers.
-            </p>
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.main-nav');
+    toggle.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+  </script>
 
-            <article aria-labelledby="derek-name">
-                <img src="imgs/derek-jenkins.jpg" alt="Derek Jenkins, archery instructor at Straight to the Point Archery">
-                <h2 id="derek-name">Derek Jenkins</h2>
-                <p>
-                    Derek is an outdoorsman and longbow craftsman who helps students build
-                    confident shooting fundamentals and practical range habits.
-                </p>
-            </article>
-
-            <article aria-labelledby="amy-name">
-                <img src="imgs/amy-smith.jpg" alt="Amy Smith, archery instructor at Straight to the Point Archery">
-                <h2 id="amy-name">Amy Smith</h2>
-                <p>
-                    Amy brings a safety-focused coaching style and strong technical instruction,
-                    with an emphasis on consistency, discipline, and steady progress.
-                </p>
-            </article>
-
-            <article aria-labelledby="nathan-name">
-                <img src="imgs/nathan-lee.jpg" alt="Nathan Lee, archery instructor at Straight to the Point Archery">
-                <h2 id="nathan-name">Nathan Lee</h2>
-                <p>
-                    Nathan is a USA Archery Level 3 NTS Coach who guides students from core
-                    technique to advanced competition preparation.
-                </p>
-            </article>
-        </section>
-    </main>
 </body>
 </html>

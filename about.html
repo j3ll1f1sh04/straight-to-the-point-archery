@@ -1,90 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>About Us | Straight to the Point Archery</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | Straight to the Point Archery</title>
+  <meta name="description" content="Learn about Straight to the Point Archery — a non-profit archery center in Seattle, WA. Our mission, history, facility, and commitment to the community." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
-    <header>
-        <nav aria-label="Main navigation">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="classes.html">Classes</a></li>
-                <li><a href="instructors.html">Instructors</a></li>
-                <li><a href="about.html" aria-current="page">About Us</a></li>
-                <li><a href="contact.html">Contact</a></li>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- ── HEADER ───────────────────────────────────────────── -->
+  <header class="site-header">
+    <div class="container">
+      <a class="site-logo" href="index.html" aria-label="Straight to the Point Archery — Home">
+        <img src="imgs/archeryAcademy-logo-white.png" alt="Archery Academy logo" class="site-logo-img" />
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="classes.html">Classes</a></li>
+          <li><a href="instructors.html">Instructors</a></li>
+          <li><a href="about.html" class="active">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ── MAIN CONTENT ─────────────────────────────────────── -->
+  <main id="main-content">
+
+    <!-- Page Hero -->
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="container">
+        <h1 id="page-title">About Straight to the Point Archery</h1>
+        <p>A community-rooted, non-profit archery center in Seattle, WA — dedicated to growing the sport and everyone who loves it.</p>
+      </div>
+    </section>
+
+    <!-- Mission -->
+    <section class="section" aria-labelledby="mission-title">
+      <div class="container">
+        <h2 class="section-title" id="mission-title">Our Mission</h2>
+
+        <div class="mission-highlight">
+          <p class="callout">"To make archery accessible, safe, and rewarding for every member of our community — regardless of age, background, or experience."</p>
+        </div>
+
+        <p>Straight to the Point Archery was founded on a simple belief: that archery is a sport for everyone. As a non-profit organization, we reinvest in our programs, our facility, and our community rather than pursuing profit. Every class fee, every membership, and every donation goes back into creating the best possible environment for archers at all levels.</p>
+        <p>We believe in the power of archery to build focus, self-discipline, confidence, and community. From a child shooting their first arrow to a competitive athlete preparing for a national tournament, we are committed to supporting every archer's journey.</p>
+      </div>
+    </section>
+
+    <!-- History -->
+    <section class="section section--light" aria-labelledby="history-title">
+      <div class="container">
+        <div class="info-row">
+          <div>
+            <h2 class="section-title" id="history-title">Our History</h2>
+            <p>Straight to the Point Archery was founded by a lifelong archer and community organizer who saw a gap in Seattle's recreational sports landscape. What began as a small weekend club in a local community center grew into a fully equipped indoor archery range offering structured programming for all ages.</p>
+            <p>Over the years, we have expanded our lane capacity, added youth programs, partnered with community organizations, and earned affiliations with the Washington State Archery Association (WSAA) and the National Field Archery Association (NFAA) — ensuring our training standards meet official competitive guidelines.</p>
+            <p>Today, we serve hundreds of archers each year, from curious beginners to WSAA competitors, and we remain as committed to our founding mission as ever.</p>
+          </div>
+          <div class="info-row__img" aria-hidden="true">
+            <div class="info-row__img-placeholder">
+              <i class="fa-solid fa-timeline"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Facility -->
+    <section class="section" aria-labelledby="facility-title">
+      <div class="container">
+        <h2 class="section-title" id="facility-title">Our Facility</h2>
+        <p>Our indoor facility is designed with both safety and performance in mind. Whether you're a first-time visitor or a veteran competitor, you'll find everything you need to train comfortably and effectively.</p>
+
+        <div class="card-grid" style="margin-top:2rem;">
+
+          <article class="card">
+            <div class="card__body">
+              <p class="card__tag"><i class="fa-solid fa-arrows-left-right" aria-hidden="true"></i> &nbsp;Range</p>
+              <h3 class="card__title">10 &amp; 20-Yard Lanes</h3>
+              <p class="card__text">Multiple indoor lanes at both 10-yard and 20-yard distances, accommodating beginner practice and standard competition distances used by WSAA and NFAA.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__body">
+              <p class="card__tag"><i class="fa-solid fa-box-open" aria-hidden="true"></i> &nbsp;Equipment</p>
+              <h3 class="card__title">Loaner Equipment Available</h3>
+              <p class="card__text">We provide bows, arrows, and protective equipment for students in all beginner and intermediate classes. Personal equipment is welcome and encouraged at the advanced level.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__body">
+              <p class="card__tag"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i> &nbsp;Safety</p>
+              <h3 class="card__title">Safety-First Design</h3>
+              <p class="card__text">Our facility is laid out to ensure maximum safety for all participants. All ranges are supervised, and every session begins with a safety briefing led by a certified instructor.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__body">
+              <p class="card__tag"><i class="fa-solid fa-universal-access" aria-hidden="true"></i> &nbsp;Accessibility</p>
+              <h3 class="card__title">Accessible to All</h3>
+              <p class="card__text">Our facility is ADA-accessible and designed to welcome archers of all physical abilities. Please contact us in advance if you have specific accommodation needs.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Affiliations -->
+    <section class="section section--navy" aria-labelledby="affiliations-title">
+      <div class="container">
+        <h2 class="section-title" id="affiliations-title">Affiliations &amp; Standards</h2>
+        <p style="opacity:0.9; margin-bottom:2rem;">Our programs are aligned with the leading organizations in the sport, so you can be confident that your training meets official competitive standards.</p>
+
+        <div class="card-grid">
+          <article class="card" style="background:rgba(255,255,255,0.08); color:var(--white);">
+            <div class="card__body">
+              <p class="card__tag" style="color:var(--gold);">USA Archery</p>
+              <h3 class="card__title" style="color:var(--white);">USA Archery Certification</h3>
+              <p class="card__text" style="color:rgba(255,255,255,0.85);">All of our coaches are certified through USA Archery, the national governing body for the sport. This ensures consistent, high-quality, safety-conscious instruction.</p>
+            </div>
+          </article>
+
+          <article class="card" style="background:rgba(255,255,255,0.08); color:var(--white);">
+            <div class="card__body">
+              <p class="card__tag" style="color:var(--gold);">WSAA</p>
+              <h3 class="card__title" style="color:var(--white);">Washington State Archery Association</h3>
+              <p class="card__text" style="color:rgba(255,255,255,0.85);">As a WSAA-affiliated center, our advanced programs prepare archers for state-level competition and follow all official rules and formats.</p>
+            </div>
+          </article>
+
+          <article class="card" style="background:rgba(255,255,255,0.08); color:var(--white);">
+            <div class="card__body">
+              <p class="card__tag" style="color:var(--gold);">NFAA</p>
+              <h3 class="card__title" style="color:var(--white);">National Field Archery Association</h3>
+              <p class="card__text" style="color:rgba(255,255,255,0.85);">Our affiliation with the NFAA means our training aligns with national field archery standards, supporting students who aspire to compete at a national level.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Policies -->
+    <section class="section section--light" aria-labelledby="policies-title">
+      <div class="container">
+        <h2 class="section-title" id="policies-title">Our Policies</h2>
+
+        <div class="info-row">
+          <div>
+            <h3 style="color:var(--navy); margin-bottom:1rem;">Non-Discrimination Policy</h3>
+            <p>Straight to the Point Archery is committed to providing a welcoming, inclusive, and respectful environment for all participants. We do not discriminate on the basis of:</p>
+            <ul class="policy-list" style="margin:1rem 0 1.5rem;">
+              <li>Race, color, or national origin</li>
+              <li>Gender identity or sexual orientation</li>
+              <li>Age (we welcome participants age 7 and up)</li>
+              <li>Religion or cultural background</li>
+              <li>Physical disability or ability level</li>
             </ul>
-        </nav>
-    </header>
+            <p>Every archer who walks through our doors deserves to feel safe, respected, and supported. If you ever experience or witness behavior that violates this standard, please contact us immediately.</p>
+          </div>
 
-    <main>
-        <section aria-labelledby="about-title">
-            <h1 id="about-title">About Straight to the Point Archery</h1>
-            <p>
-                We are a Tacoma-based non-profit archery education center committed to creating
-                a safe, welcoming, and growth-focused environment for every archer.
-            </p>
-        </section>
-
-        <section aria-labelledby="mission-title">
-            <h2 id="mission-title">Our Mission</h2>
-            <p>
-                Our mission is to teach archery with integrity, safety, and purpose while helping
-                students of all ages build confidence, focus, and lifelong skills.
-            </p>
-            <p>
-                We support beginners, youth, and experienced athletes through structured training,
-                certified coaching, and a strong commitment to positive learning experiences.
-            </p>
-        </section>
-
-        <section aria-labelledby="history-title">
-            <h2 id="history-title">Our History</h2>
-            <p>
-                Founded in 2005 by Giap Nguyen, Straight to the Point Archery began as a
-                community-driven non-profit focused on expanding access to quality archery instruction.
-            </p>
-            <p>
-                Over the years, the center has grown into a trusted local training destination for
-                recreational students, youth programs, and competitive archers.
-            </p>
-        </section>
-
-        <section aria-labelledby="facilities-title">
-            <h2 id="facilities-title">Our Facilities</h2>
-            <ul>
-                <li>28 indoor lanes, including both 10-yard and 20-yard distances</li>
-                <li>2 private training rooms for focused one-on-one coaching</li>
-                <li>Additional range space with expanded lane access and an outdoor practice field</li>
-                <li>Instructional environments for youth classes, private lessons, and group sessions</li>
+          <div>
+            <h3 style="color:var(--navy); margin-bottom:1rem;">Safety Policy</h3>
+            <p>Safety is our highest priority. All participants are required to:</p>
+            <ul class="policy-list" style="margin:1rem 0 1.5rem;">
+              <li>Complete a safety orientation before their first session</li>
+              <li>Follow all range commands given by instructors</li>
+              <li>Never draw a bow when others are downrange</li>
+              <li>Wear appropriate protective equipment as directed</li>
+              <li>Report any unsafe conditions or incidents to staff immediately</li>
             </ul>
-        </section>
+            <p>Violation of safety rules may result in removal from the facility. We take this seriously to protect all members of our community.</p>
 
-        <section aria-labelledby="community-title">
-            <h2 id="community-title">Community and Partnerships</h2>
-            <p>
-                We actively serve schools, scouts, and local organizations through inclusive
-                programs that introduce archery in a supportive and educational setting.
-            </p>
-            <p>
-                Our center maintains affiliations with recognized archery and bowhunting
-                organizations to align instruction with established standards.
-            </p>
-        </section>
+            <h3 style="color:var(--navy); margin:1.5rem 0 1rem;">Registration &amp; Cancellation</h3>
+            <p>Class registration is confirmed upon payment. Cancellations made 7 or more days before a session begins are eligible for a full refund. Please contact us for extenuating circumstances or rescheduling requests.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <section aria-labelledby="policy-title">
-            <h2 id="policy-title">Policies and Commitment</h2>
-            <p>
-                Straight to the Point Archery upholds a nondiscriminatory policy and welcomes
-                participants of all backgrounds, identities, and abilities.
-            </p>
-            <p>
-                We are committed to maintaining a respectful, safe, and community-centered
-                environment where every student can learn and thrive.
-            </p>
-        </section>
-    </main>
+    <!-- CTA -->
+    <section class="section section--primary" aria-labelledby="about-cta-title">
+      <div class="container" style="text-align:center; max-width:640px;">
+        <h2 class="section-title" id="about-cta-title" style="display:block; text-align:center;">Ready to Join Our Community?</h2>
+        <p style="font-size:18px; opacity:0.95; margin-bottom:2rem;">Whether you're brand new to archery or looking for a community to grow with, we'd love to meet you. Come see the facility, meet the coaches, and find the right program for you.</p>
+        <a href="classes.html" class="btn btn--gold">Browse Classes</a>
+        &nbsp;
+        <a href="contact.html" class="btn btn--outline">Get in Touch</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── FOOTER ───────────────────────────────────────────── -->
+  <footer class="site-footer">
+    <div class="footer-image-bar" aria-hidden="true">
+      <div class="footer-image-bar-placeholder">
+        <i class="fa-solid fa-bullseye"></i>
+      </div>
+    </div>
+    <div class="footer-main">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <div class="footer-logo-text">Straight to the Point</div>
+            <p class="footer-tagline">A non-profit archery center dedicated to making archery safe, accessible, and rewarding for everyone in the Seattle community.</p>
+          </div>
+          <nav aria-label="Footer navigation">
+            <h3 class="footer-heading">Quick Links</h3>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="classes.html">Classes</a></li>
+              <li><a href="instructors.html">Instructors</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+          <div>
+            <h3 class="footer-heading">Contact</h3>
+            <address style="font-style:normal; font-size:15px; opacity:0.8; line-height:1.9;">
+              123 Archery Lane<br>Seattle, WA 98101<br>
+              <a href="tel:+12065550123" style="color:rgba(255,255,255,0.8);">(206) 555-0123</a><br>
+              <a href="mailto:info@sttpa.com" style="color:rgba(255,255,255,0.8);">info@sttpa.com</a>
+            </address>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>&copy; 2024 Straight to the Point Archery | Seattle, WA</span>
+          <span>Affiliated with WSAA &amp; NFAA</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.main-nav');
+    toggle.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+  </script>
+
 </body>
 </html>

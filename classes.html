@@ -1,78 +1,360 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Classes | Straight to the Point Archery</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Classes | Straight to the Point Archery</title>
+  <meta name="description" content="Explore beginner, intermediate, advanced, and private archery classes at Straight to the Point Archery in Seattle, WA. View schedules, costs, and prerequisites." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
-    <header>
-        <nav aria-label="Main navigation">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="classes.html" aria-current="page">Classes</a></li>
-                <li><a href="instructors.html">Instructors</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact</a></li>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- ── HEADER ───────────────────────────────────────────── -->
+  <header class="site-header">
+    <div class="container">
+      <a class="site-logo" href="index.html" aria-label="Straight to the Point Archery — Home">
+        <img src="imgs/archeryAcademy-logo-white.png" alt="Archery Academy logo" class="site-logo-img" />
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="classes.html" class="active">Classes</a></li>
+          <li><a href="instructors.html">Instructors</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ── MAIN CONTENT ─────────────────────────────────────── -->
+  <main id="main-content">
+
+    <!-- Page Hero -->
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="container">
+        <h1 id="page-title">Classes &amp; Programs</h1>
+        <p>From your very first arrow to competitive shooting — find the course that fits your goals, schedule, and budget.</p>
+      </div>
+    </section>
+
+    <!-- Beginner Classes -->
+    <section class="section" id="beginners" aria-labelledby="beginners-title">
+      <div class="container">
+        <h2 class="section-title" id="beginners-title">Beginner Classes</h2>
+        <p>New to archery? Our beginner programs are designed to give you a safe, supportive, and fun introduction to the sport. Equipment is provided — just show up ready to learn.</p>
+
+        <section class="class-article" aria-labelledby="a101-title">
+          <h3 id="a101-title">A101 — Introduction to Archery</h3>
+          <p>The perfect starting point for anyone new to archery. This course covers foundational archery safety, proper stance and posture, grip, draw, and release technique. Participants will shoot at 10-yard targets to build confidence and consistency.</p>
+
+          <div class="class-meta" aria-label="Class details">
+            <div class="class-meta-item">
+              <i class="fa-solid fa-calendar" aria-hidden="true"></i>
+              <div>
+                <div class="class-meta-label">Schedule</div>
+                Saturdays, 9:00 AM – 11:00 AM
+              </div>
+            </div>
+            <div class="class-meta-item">
+              <i class="fa-solid fa-dollar-sign" aria-hidden="true"></i>
+              <div>
+                <div class="class-meta-label">Cost</div>
+                $75 per 4-week session
+              </div>
+            </div>
+            <div class="class-meta-item">
+              <i class="fa-solid fa-clipboard-check" aria-hidden="true"></i>
+              <div>
+                <div class="class-meta-label">Prerequisites</div>
+                None — all welcome
+              </div>
+            </div>
+            <div class="class-meta-item">
+              <i class="fa-solid fa-box-open" aria-hidden="true"></i>
+              <div>
+                <div class="class-meta-label">Equipment</div>
+                All equipment provided
+              </div>
+            </div>
+          </div>
+
+          <a href="contact.html" class="btn btn--gold">Enroll in A101</a>
+        </section>
+
+        <section class="class-article" aria-labelledby="youth-title">
+          <h3 id="youth-title">Youth Archery — Ages 7 &amp; Up</h3>
+          <p>Designed for young archers, this program introduces children to archery with age-appropriate instruction focused on safety, fun, and foundational skills. Qualified instructors maintain a safe and encouraging environment for all youth participants.</p>
+
+          <div class="class-meta" aria-label="Class details">
+            <div class="class-meta-item">
+              <i class="fa-solid fa-calendar" aria-hidden="true"></i>
+              <div>
+                <div class="class-meta-label">Schedule</div>
+                Sundays, 10:00 AM – 11:30 AM
+              </div>
+            </div>
+            <div class="class-meta-item">
+              <i class="fa-solid fa-dollar-sign" aria-hidden="true"></i>
+              <div>
+                <div class="class-meta-label">Cost</div>
+                $65 per 4-week session
+              </div>
+            </div>
+            <div class="class-meta-item">
+              <i class="fa-solid fa-clipboard-check" aria-hidden="true"></i>
+              <div>
+                <div class="class-meta-label">Prerequisites</div>
+                Minimum age: 7 years old
+              </div>
+            </div>
+            <div class="class-meta-item">
+              <i class="fa-solid fa-box-open" aria-hidden="true"></i>
+              <div>
+                <div class="class-meta-label">Equipment</div>
+                All equipment provided
+              </div>
+            </div>
+          </div>
+
+          <a href="contact.html" class="btn btn--gold">Enroll in Youth Archery</a>
+        </section>
+      </div>
+    </section>
+
+    <!-- Intermediate Classes -->
+    <section class="section section--light" id="intermediate" aria-labelledby="intermediate-title">
+      <div class="container">
+        <h2 class="section-title" id="intermediate-title">Intermediate Classes</h2>
+        <p>Ready to level up? Intermediate classes refine your technique, improve consistency, and help you select personal equipment suited to your style and goals.</p>
+
+        <section class="class-article" aria-labelledby="a102-title">
+          <h3 id="a102-title">A102 — Skill Development</h3>
+          <p>Building directly on A101, this course focuses on refining technique, improving shot consistency, and introducing archers to 20-yard shooting. Students will also receive guidance on personal equipment selection — covering bow styles, arrows, and accessories suited to their individual goals.</p>
+
+          <div class="class-meta" aria-label="Class details">
+            <div class="class-meta-item">
+              <i class="fa-solid fa-calendar" aria-hidden="true"></i>
+              <div>
+                <div class="class-meta-label">Schedule</div>
+                Tuesdays, 6:00 PM – 8:00 PM
+              </div>
+            </div>
+            <div class="class-meta-item">
+              <i class="fa-solid fa-dollar-sign" aria-hidden="true"></i>
+              <div>
+                <div class="class-meta-label">Cost</div>
+                $90 per 4-week session
+              </div>
+            </div>
+            <div class="class-meta-item">
+              <i class="fa-solid fa-clipboard-check" aria-hidden="true"></i>
+              <div>
+                <div class="class-meta-label">Prerequisites</div>
+                Completion of A101 or equivalent
+              </div>
+            </div>
+            <div class="class-meta-item">
+              <i class="fa-solid fa-arrows-left-right" aria-hidden="true"></i>
+              <div>
+                <div class="class-meta-label">Lane Distance</div>
+                10 &amp; 20 yards
+              </div>
+            </div>
+          </div>
+
+          <a href="contact.html" class="btn btn--gold">Enroll in A102</a>
+        </section>
+      </div>
+    </section>
+
+    <!-- Advanced Classes -->
+    <section class="section" id="advanced" aria-labelledby="advanced-title">
+      <div class="container">
+        <h2 class="section-title" id="advanced-title">Advanced &amp; Competitive</h2>
+        <p>For serious athletes ready to compete. Our advanced program aligns with WSAA and NFAA regulations and prepares you for tournament-level performance.</p>
+
+        <section class="class-article" aria-labelledby="a103-title">
+          <h3 id="a103-title">A103 — Competitive Training</h3>
+          <p>This advanced course transitions skilled archers into tournament-style shooting. Training covers precision technique, mental focus, competitive scoring formats, and official regulations as recognized by the Washington State Archery Association (WSAA) and National Field Archery Association (NFAA). Lane distances of 10 and 20 yards are used throughout.</p>
+
+          <div class="class-meta" aria-label="Class details">
+            <div class="class-meta-item">
+              <i class="fa-solid fa-calendar" aria-hidden="true"></i>
+              <div>
+                <div class="class-meta-label">Schedule</div>
+                Thursdays, 6:00 PM – 8:30 PM
+              </div>
+            </div>
+            <div class="class-meta-item">
+              <i class="fa-solid fa-dollar-sign" aria-hidden="true"></i>
+              <div>
+                <div class="class-meta-label">Cost</div>
+                $110 per 4-week session
+              </div>
+            </div>
+            <div class="class-meta-item">
+              <i class="fa-solid fa-clipboard-check" aria-hidden="true"></i>
+              <div>
+                <div class="class-meta-label">Prerequisites</div>
+                Completion of A102 or pre-evaluation
+              </div>
+            </div>
+            <div class="class-meta-item">
+              <i class="fa-solid fa-arrows-left-right" aria-hidden="true"></i>
+              <div>
+                <div class="class-meta-label">Lane Distance</div>
+                10 &amp; 20 yards (standard competition)
+              </div>
+            </div>
+          </div>
+
+          <a href="contact.html" class="btn btn--gold">Enroll in A103</a>
+        </section>
+      </div>
+    </section>
+
+    <!-- Private Lessons -->
+    <section class="section section--navy" id="private" aria-labelledby="private-title">
+      <div class="container">
+        <h2 class="section-title" id="private-title">Private Lessons</h2>
+        <p style="margin-bottom:2rem; opacity:0.9;">One-on-one instruction with a USA Archery-certified coach tailored entirely to your schedule, pace, and archery interests — whether that's recurve, compound, traditional longbow, or bow hunting.</p>
+
+        <div class="card-grid">
+          <article class="card">
+            <div class="card__body">
+              <p class="card__tag">Single Lesson</p>
+              <h3 class="card__title">60-Minute Session</h3>
+              <p class="card__text">A focused one-on-one session addressing your specific goals and technique. Ideal for targeted improvement or a try-before-you-commit option.</p>
+              <div class="card__meta"><strong>$65</strong> per session</div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__body">
+              <p class="card__tag">Best Value</p>
+              <h3 class="card__title">5-Lesson Package</h3>
+              <p class="card__text">A structured series of five 60-minute sessions for consistent skill development. Best value for busy individuals who want dedicated coaching.</p>
+              <div class="card__meta"><strong>$280</strong> (save $45)</div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__body">
+              <p class="card__tag">Specialty</p>
+              <h3 class="card__title">Specialized Coaching</h3>
+              <p class="card__text">Focused coaching for specific interests: bow hunting, traditional longbow, or barebow. Matched with an instructor who holds expertise in your chosen style.</p>
+              <div class="card__meta">Contact us for pricing</div>
+            </div>
+          </article>
+        </div>
+
+        <div style="text-align:center; margin-top:2.5rem;">
+          <a href="contact.html" class="btn btn--gold">Book a Private Lesson</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Group & Community -->
+    <section class="section section--light" id="groups" aria-labelledby="groups-class-title">
+      <div class="container">
+        <h2 class="section-title" id="groups-class-title">Group &amp; Community Programs</h2>
+        <p>We welcome youth organizations, corporate groups, non-profits, and community partners. Our facility can accommodate groups for parties, team-building events, and scouting programs.</p>
+
+        <div class="card-grid" style="margin-top:2rem;">
+          <article class="card">
+            <div class="card__body">
+              <p class="card__tag"><i class="fa-solid fa-child" aria-hidden="true"></i> &nbsp;Youth</p>
+              <h3 class="card__title">Scouts &amp; Youth Groups</h3>
+              <p class="card__text">Programs aligned with Boy Scouts and other youth organizations. Age-appropriate, safe, and designed to earn archery merit badges and skill certifications.</p>
+              <div class="card__meta">Contact us for group rates</div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__body">
+              <p class="card__tag"><i class="fa-solid fa-briefcase" aria-hidden="true"></i> &nbsp;Corporate</p>
+              <h3 class="card__title">Corporate &amp; Team Events</h3>
+              <p class="card__text">Book an unforgettable team-building experience. We handle setup, instruction, and equipment — you just bring the team.</p>
+              <div class="card__meta">Contact us for event pricing</div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__body">
+              <p class="card__tag"><i class="fa-solid fa-handshake" aria-hidden="true"></i> &nbsp;Partners</p>
+              <h3 class="card__title">Non-Profit Partnerships</h3>
+              <p class="card__text">We partner with organizations like the YMCA to provide group outings and archery access to underserved communities. Let's talk.</p>
+              <div class="card__meta">Contact us to explore partnership</div>
+            </div>
+          </article>
+        </div>
+
+        <div style="text-align:center; margin-top:2.5rem;">
+          <a href="contact.html" class="btn btn--primary">Contact Us About Groups</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── FOOTER ───────────────────────────────────────────── -->
+  <footer class="site-footer">
+    <div class="footer-image-bar" aria-hidden="true">
+      <div class="footer-image-bar-placeholder">
+        <i class="fa-solid fa-bullseye"></i>
+      </div>
+    </div>
+    <div class="footer-main">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <div class="footer-logo-text">Straight to the Point</div>
+            <p class="footer-tagline">A non-profit archery center dedicated to making archery safe, accessible, and rewarding for everyone in the Seattle community.</p>
+          </div>
+          <nav aria-label="Footer navigation">
+            <h3 class="footer-heading">Quick Links</h3>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="classes.html">Classes</a></li>
+              <li><a href="instructors.html">Instructors</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact</a></li>
             </ul>
-        </nav>
-    </header>
+          </nav>
+          <div>
+            <h3 class="footer-heading">Contact</h3>
+            <address style="font-style:normal; font-size:15px; opacity:0.8; line-height:1.9;">
+              123 Archery Lane<br>Seattle, WA 98101<br>
+              <a href="tel:+12065550123" style="color:rgba(255,255,255,0.8);">(206) 555-0123</a><br>
+              <a href="mailto:info@sttpa.com" style="color:rgba(255,255,255,0.8);">info@sttpa.com</a>
+            </address>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>&copy; 2024 Straight to the Point Archery | Seattle, WA</span>
+          <span>Affiliated with WSAA &amp; NFAA</span>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-    <main>
-        <section aria-labelledby="classes-page-title">
-            <h1 id="classes-page-title">Archery Classes</h1>
-            <p>
-                From first-time archers to tournament-focused athletes, our classes are organized
-                by skill level so you can join the right training path.
-            </p>
-        </section>
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.main-nav');
+    toggle.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+  </script>
 
-        <section aria-labelledby="class-list-title">
-            <h2 id="class-list-title">Class Offerings</h2>
-
-            <article aria-labelledby="a101-title">
-                <h3 id="a101-title">A101 Basic Archery</h3>
-                <p>
-                    Ideal for beginners learning range safety, stance, aiming, and release
-                    fundamentals in a supportive environment.
-                </p>
-                <ul>
-                    <li><strong>Schedule:</strong> Monday and Wednesday, 4:00 PM to 5:00 PM</li>
-                    <li><strong>Cost:</strong> $120 per month</li>
-                    <li><strong>Prerequisites:</strong> None; ages 8+ (age 7 accepted with evaluation)</li>
-                    <li><strong>Equipment:</strong> Basic gear provided for new students</li>
-                </ul>
-            </article>
-
-            <article aria-labelledby="a102-title">
-                <h3 id="a102-title">A102 Intermediate Archery</h3>
-                <p>
-                    Designed for archers who are ready to improve accuracy, consistency, and
-                    shot execution after completing beginner fundamentals.
-                </p>
-                <ul>
-                    <li><strong>Schedule:</strong> Tuesday and Thursday, 4:00 PM to 5:00 PM</li>
-                    <li><strong>Cost:</strong> $120 per month</li>
-                    <li><strong>Prerequisites:</strong> Completion of A101 or instructor approval</li>
-                    <li><strong>Equipment:</strong> Students may use personal or center-provided equipment</li>
-                </ul>
-            </article>
-
-            <article aria-labelledby="a103-title">
-                <h3 id="a103-title">A103 Advanced Archery</h3>
-                <p>
-                    Focuses on advanced form refinement, competition preparation, and technical
-                    performance coaching for experienced archers.
-                </p>
-                <ul>
-                    <li><strong>Schedule:</strong> Tuesday and Thursday, 5:00 PM to 6:00 PM</li>
-                    <li><strong>Cost:</strong> $120 per month</li>
-                    <li><strong>Prerequisites:</strong> Completion of A102 or instructor approval</li>
-                    <li><strong>Equipment:</strong> Guidance available for selecting competition-ready gear</li>
-                </ul>
-            </article>
-        </section>
-    </main>
 </body>
 </html>

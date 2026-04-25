@@ -1,89 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Straight to the Point Archery</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Straight to the Point Archery | Seattle, WA</title>
+  <meta name="description" content="Straight to the Point Archery offers beginner to advanced archery classes, private lessons, and youth programs in Seattle, WA." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
-    <header>
-        <nav aria-label="Main navigation">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="classes.html">Classes</a></li>
-                <li><a href="instructors.html">Instructors</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact</a></li>
+
+  <!-- Skip Navigation -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- ── HEADER ───────────────────────────────────────────── -->
+  <header class="site-header">
+    <div class="container">
+      <a class="site-logo" href="index.html" aria-label="Straight to the Point Archery — Home">
+        <img src="imgs/archeryAcademy-logo-white.png" alt="Archery Academy logo" class="site-logo-img" />
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="classes.html">Classes</a></li>
+          <li><a href="instructors.html">Instructors</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ── MAIN CONTENT ─────────────────────────────────────── -->
+  <main id="main-content">
+
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__bg"></div>
+      <div class="hero__accent" aria-hidden="true"></div>
+      <div class="container">
+        <div class="hero__content">
+          <p class="hero__eyebrow">Non-Profit Archery Center · Seattle, WA</p>
+          <h1 class="hero__title" id="hero-title">
+            Hit Your Mark.<br><em>Every Time.</em>
+          </h1>
+          <p class="hero__subtitle">
+            From first-time beginners to competitive archers, Straight to the Point Archery offers expert instruction, a welcoming community, and a world-class facility for all skill levels.
+          </p>
+          <div class="hero__cta">
+            <a href="classes.html" class="btn btn--gold">View Classes</a>
+            <a href="contact.html" class="btn btn--outline">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Bar -->
+    <aside class="stats-bar" aria-label="Quick facts">
+      <div class="container">
+        <div class="stats-grid">
+          <div>
+            <div class="stat-number">10+</div>
+            <div class="stat-label">Course Levels</div>
+          </div>
+          <div>
+            <div class="stat-number">20yd</div>
+            <div class="stat-label">Max Lane Distance</div>
+          </div>
+          <div>
+            <div class="stat-number">USA</div>
+            <div class="stat-label">Archery Certified</div>
+          </div>
+          <div>
+            <div class="stat-number">All</div>
+            <div class="stat-label">Ages &amp; Skill Levels</div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Why Choose Us -->
+    <section class="section" aria-labelledby="why-title">
+      <div class="container">
+        <h2 class="section-title" id="why-title">Why Straight to the Point?</h2>
+        <div class="card-grid">
+
+          <article class="card">
+            <div class="card__body">
+              <p class="card__tag"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i> &nbsp;Safety First</p>
+              <h3 class="card__title">Expert-Led Safety Training</h3>
+              <p class="card__text">Every class begins with proper archery safety and form. Our USA Archery-certified instructors ensure you learn the right habits from day one.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__body">
+              <p class="card__tag"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i> &nbsp;All Levels</p>
+              <h3 class="card__title">Beginner to Competitive</h3>
+              <p class="card__text">Whether you're picking up a bow for the first time or preparing for tournament-style shooting, we have a class designed for you.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__body">
+              <p class="card__tag"><i class="fa-solid fa-people-group" aria-hidden="true"></i> &nbsp;Community</p>
+              <h3 class="card__title">Inclusive &amp; Welcoming</h3>
+              <p class="card__text">As a non-profit, we're committed to making archery accessible to everyone. We welcome youth programs, scouts, corporate groups, and individuals alike.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Classes Preview -->
+    <section class="section section--light" aria-labelledby="classes-preview-title">
+      <div class="container">
+        <h2 class="section-title" id="classes-preview-title">Our Classes</h2>
+        <p>From introductory A101 sessions to advanced A103 competitive training, every program is crafted to grow your skills and confidence on the range.</p>
+
+        <div class="card-grid" style="margin-top:2rem;">
+
+          <article class="card">
+            <div class="card__body">
+              <p class="card__tag">Beginners</p>
+              <h3 class="card__title">A101 — Introduction to Archery</h3>
+              <p class="card__text">Learn foundational safety, stance, and shooting form. Equipment provided. No experience needed.</p>
+              <a href="classes.html#beginners" class="btn btn--primary" style="margin-top:auto; align-self:flex-start;">Learn More</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__body">
+              <p class="card__tag">Intermediate</p>
+              <h3 class="card__title">A102 — Skill Development</h3>
+              <p class="card__text">Build on your fundamentals with refined technique, consistency drills, and personal equipment guidance.</p>
+              <a href="classes.html#intermediate" class="btn btn--primary" style="margin-top:auto; align-self:flex-start;">Learn More</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__body">
+              <p class="card__tag">Advanced</p>
+              <h3 class="card__title">A103 — Competitive Training</h3>
+              <p class="card__text">Tournament-style shooting at 10 and 20-yard lanes, WSAA/NFAA-aligned training, and performance coaching.</p>
+              <a href="classes.html#advanced" class="btn btn--primary" style="margin-top:auto; align-self:flex-start;">Learn More</a>
+            </div>
+          </article>
+
+        </div>
+
+        <div style="text-align:center; margin-top:2.5rem;">
+          <a href="classes.html" class="btn btn--gold">See All Classes &amp; Pricing</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Callout -->
+    <section class="section" aria-labelledby="about-callout-title">
+      <div class="container">
+        <div class="info-row">
+          <div class="info-row__text">
+            <h2 class="section-title" id="about-callout-title">Our Mission</h2>
+            <p>Straight to the Point Archery was founded to make the sport of archery accessible, safe, and rewarding for every member of our community. As a non-profit archery center based in Seattle, WA, we believe that anyone — regardless of age, background, or experience — deserves the chance to discover the discipline and joy of archery.</p>
+            <p>We are affiliated with the Washington State Archery Association (WSAA) and the National Field Archery Association (NFAA), ensuring our training aligns with official standards.</p>
+            <a href="about.html" class="btn btn--primary" style="margin-top:0.5rem;">Learn About Us</a>
+          </div>
+          <div class="info-row__img" aria-hidden="true">
+            <div class="info-row__img-placeholder">
+              <i class="fa-solid fa-bullseye"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Groups & Community -->
+    <section class="section section--primary" aria-labelledby="groups-title">
+      <div class="container">
+        <h2 class="section-title" id="groups-title">Group &amp; Community Programs</h2>
+        <div class="card-grid">
+
+          <article class="card">
+            <div class="card__body">
+              <p class="card__tag"><i class="fa-solid fa-child" aria-hidden="true"></i> &nbsp;Youth</p>
+              <h3 class="card__title">Youth &amp; Scouts Programs</h3>
+              <p class="card__text">Structured programs for children including Boy Scouts and other youth group activities. Age-appropriate instruction with certified coaches.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__body">
+              <p class="card__tag"><i class="fa-solid fa-briefcase" aria-hidden="true"></i> &nbsp;Corporate</p>
+              <h3 class="card__title">Team Building Events</h3>
+              <p class="card__text">Book a unique corporate outing or team-building event. We host group parties and can accommodate organizations of all sizes.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__body">
+              <p class="card__tag"><i class="fa-solid fa-hands-holding-circle" aria-hidden="true"></i> &nbsp;Non-Profits</p>
+              <h3 class="card__title">Partnership Programs</h3>
+              <p class="card__text">We partner with organizations like the YMCA to offer group outings and community programs. Reach out to explore opportunities.</p>
+            </div>
+          </article>
+
+        </div>
+        <div style="text-align:center; margin-top:2.5rem;">
+          <a href="contact.html" class="btn btn--outline">Inquire About Group Bookings</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── FOOTER ───────────────────────────────────────────── -->
+  <footer class="site-footer">
+    <div class="footer-image-bar" aria-hidden="true">
+      <img src="imgs/footerImage.jpg" alt="" />
+    </div>
+
+    <div class="footer-main">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <img src="imgs/archeryAcademy-logo-white.png" alt="Archery Academy" class="footer-logo-img" />
+            <p class="footer-tagline">A non-profit archery center dedicated to making archery safe, accessible, and rewarding for everyone in the Seattle community.</p>
+          </div>
+
+          <nav aria-label="Footer navigation">
+            <h3 class="footer-heading">Quick Links</h3>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="classes.html">Classes</a></li>
+              <li><a href="instructors.html">Instructors</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact</a></li>
             </ul>
-        </nav>
-    </header>
+          </nav>
 
-    <main>
-        <section class="hero" aria-labelledby="hero-title">
-            <h1 id="hero-title">Straight to the Point Archery</h1>
-            <p>Tacoma's premier indoor archery education center.</p>
-            <p>
-                Beginner-friendly classes, youth programs, and private coaching with USA Archery-certified instructors.
-                Build safe, confident skills from your first shot to competitive performance.
-            </p>
-            <a href="classes.html">View Class Schedule</a>
-            <a href="contact.html">Contact Us</a>
-        </section>
+          <div>
+            <h3 class="footer-heading">Contact</h3>
+            <address style="font-style:normal; font-size:15px; opacity:0.8; line-height:1.9;">
+              123 Archery Lane<br>
+              Seattle, WA 98101<br>
+              <a href="tel:+12065550123" style="color:rgba(255,255,255,0.8);">(206) 555-0123</a><br>
+              <a href="mailto:info@straighttothepointarchery.com" style="color:rgba(255,255,255,0.8);">info@sttpa.com</a>
+            </address>
+          </div>
+        </div>
 
-        <section aria-labelledby="highlights-title">
-            <h2 id="highlights-title">Why Start Here</h2>
-            <ul>
-                <li>Beginner classes designed for first-time archers.</li>
-                <li>Youth options for ages 8+ (age 7 with evaluation).</li>
-                <li>USA Archery-certified coaches and a safety-first environment.</li>
-            </ul>
-        </section>
+        <div class="footer-bottom">
+          <span>&copy; 2024 Straight to the Point Archery | Seattle, WA</span>
+          <span>Affiliated with WSAA &amp; NFAA</span>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-        <section aria-labelledby="classes-title">
-            <h2 id="classes-title">Choose Your Training Path</h2>
-            <article>
-                <h3>A101 Basic Archery</h3>
-                <p>Learn safety, stance, and form fundamentals in a supportive beginner class.</p>
-            </article>
-            <article>
-                <h3>A102 Intermediate Archery</h3>
-                <p>Advance consistency and technique after mastering beginner-level basics.</p>
-            </article>
-            <article>
-                <h3>A103 Advanced Archery</h3>
-                <p>Train for tournament-style shooting and higher performance goals.</p>
-            </article>
-            <a href="classes.html">Explore All Classes</a>
-        </section>
+  <script>
+    // Mobile nav toggle
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.main-nav');
+    toggle.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+  </script>
 
-        <section aria-labelledby="private-lessons-title">
-            <h2 id="private-lessons-title">Private Lessons</h2>
-            <p>
-                Get one-on-one coaching matched to your goals, from beginner confidence building
-                to competitive and specialty archery development.
-            </p>
-            <a href="contact.html">Book a Private Lesson</a>
-        </section>
-
-        <section aria-labelledby="programs-title">
-            <h2 id="programs-title">Youth and Group Programs</h2>
-            <p>
-                We support schools, scouts, community groups, and corporate events with
-                age-appropriate, instructor-led archery experiences.
-            </p>
-            <a href="contact.html">Ask About Group Programs</a>
-        </section>
-
-        <section aria-labelledby="trust-title">
-            <h2 id="trust-title">Visit or Contact Us</h2>
-            <p>
-                Questions about schedules, equipment, or enrollment? Our team is ready to help
-                you choose the best starting point.
-            </p>
-            <a href="instructors.html">Meet the Instructors</a>
-            <a href="about.html">Learn About Our Mission</a>
-        </section>
-    </main>
 </body>
 </html>
